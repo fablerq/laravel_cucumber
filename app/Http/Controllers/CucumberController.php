@@ -42,7 +42,7 @@ class CucumberController extends Controller
         DB::table('cucumbers')->insert($data);
 
         echo 'Огурец успешно добавлен';
-        echo '<h3>Мне есть что еще положить!<a href="/cucumber_project/public/customer">клац</a></h3>';
+        echo '<h3>Мне есть что еще положить!<a href="/cucumber_project/public/api/customer">клац</a></h3>';
     }
 
     /**
@@ -71,7 +71,12 @@ class CucumberController extends Controller
     public function show($id)
     {
         $cucumber = Cucumber::find($id);
+        //$cucumber =  \App\Models\Cucumber::findOrFail($id);
         return view('cucumber', compact('cucumber'));
+//
+//        return $post;
+//        $cucumber = Cucumber::find($id)->json(Cucumber::all());
+//        return view('cucumber', compact('cucumber'));
     }
 
     /**
@@ -107,7 +112,7 @@ class CucumberController extends Controller
     {
         DB::table('cucumbers')->where('id', $id)->delete();
         echo 'Вы успешно забрали огурчик';
-        echo '<h3>Взглянуть на прилавок еще раз...<a href="/cucumber_project/public/customer">клац</a></h3>';
+        echo '<h3>Взглянуть на прилавок еще раз...<a href="/cucumber_project/public/api/customer">клац</a></h3>';
     }
 
     public function countrows()

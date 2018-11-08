@@ -28,7 +28,7 @@
             <td>{{ $cucumber->id }}</td>
             <td>{{ $cucumber->price }}</td>
             <td>{{ $cucumber->color }}</td>
-            <td><a href="/cucumber_project/public/customer/{{$cucumber->id}}">Посмотреть</a></td>
+            <td><a href="/cucumber_project/public/api/customer/{{$cucumber->id}}">Посмотреть</a></td>
         </tr>
         @endforeach
     </table>
@@ -44,7 +44,7 @@
         <tr>
             <td>{{ $country->id }}</td>
             <td>{{ $country->name }}</td>
-            <td><a href="/cucumber_project/public/customer/country/{{$country->id}}">показать</a></td>
+            <td><a href="/cucumber_project/public/api/customer/country/{{$country->id}}">показать</a></td>
         </tr>
     @endforeach
 </table>
@@ -53,5 +53,7 @@
 
 
 <h2>Отойти от прилавка <a href="/cucumber_project/public/">Отойти</a></h2>
+
+{{--{{ $cucumbers }}--}}
 </body>
 </html>

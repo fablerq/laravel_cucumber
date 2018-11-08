@@ -13,7 +13,10 @@
     <li>Страна: {{ $cucumber->country->name }} (ID страны: {{ $cucumber->country_id }})</li>
     <li>Есть пупырышки? {{ $cucumber->smooth->name }}  (0 или 1)</li>
 </ul>
-    <h3>Забрать с собой этот огурчик <a href="/cucumber_project/public/customer/delete/{{ $cucumber->id }}">клац</a></h3>
-    <h3>Оглядять прилавок еще раз <a href="/cucumber_project/public/customer">клац</a></h3>
+    <h3>Забрать с собой этот огурчик <a href="/cucumber_project/public/api/customer/delete/{{ $cucumber->id }}">клац</a></h3>
+    <h3>Оглядять прилавок еще раз <a href="/cucumber_project/public/api/customer">клац</a></h3>
+
+
+{{--{{ $cucumber }}--}}
 </body>
 </html>

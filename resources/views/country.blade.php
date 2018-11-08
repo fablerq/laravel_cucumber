@@ -24,10 +24,10 @@
             <td>{{ $cucumber->price }}</td>
             <td>{{ $cucumber->color }}</td>
             <td>{{ $cucumber->country->name }}</td>
-            <td><a href="/cucumber_project/public/customer/{{$cucumber->id}}">Посмотреть</a></td>
+            <td><a href="/cucumber_project/public/api/customer/{{$cucumber->id}}">Посмотреть</a></td>
         </tr>
     @endforeach
 </table>
-<h3>Оглядять прилавок еще раз <a href="/cucumber_project/public/customer">клац</a></h3>
+<h3>Оглядять прилавок еще раз <a href="/cucumber_project/public/api/customer">клац</a></h3>
 </body>
 </html>

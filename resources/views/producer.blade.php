@@ -14,7 +14,7 @@
 <h2>Зайдя за прилавок и поздоровавшись с продавцом, вы решили начать раскладывать новый товар...</h2>
 
 
-<form action="/cucumber_project/public/producer/create" method="post">
+<form action="/cucumber_project/public/api/producer/create" method="post">
     <table>
         <tr>
             {{ csrf_field() }}
